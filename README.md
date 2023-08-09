@@ -6,8 +6,11 @@ Neovim config with a lot of plugins.
 
 ### Features
 
-You can find list of plugins at [third-party folder](third-party/) folder.
-You can find list of mappings at [lua/maps.lua](lua/maps.lua) file.
+* You can find list of plugins at [third-party folder](third-party/) folder.
+* You can find list of mappings at the next files:
+    * [lua/maps.lua](lua/maps.lua)
+    * [lua/configs/nvim-cmp.lua](lua/configs/nvim-cmp.lua)
+    * [lua/configs/nvim-lspconfig.lua](lua/configs/nvim-lspconfig.lua)
 
 ### Installation
 
