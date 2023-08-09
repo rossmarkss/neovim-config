@@ -1,5 +1,7 @@
 #!/bin/bash
 
+ln -sf ~/.config/nvim/bin/nvim.appimage ~/.local/bin/nvim
+
 PACKER_INSTALL_DIR=~/.local/share/nvim/site/pack/packer/start/
 PLUGINS_DIR=~/.config/nvim/third-party
 
