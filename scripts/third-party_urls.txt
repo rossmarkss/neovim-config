@@ -29,3 +29,4 @@ https://github.com/nvim-lualine/lualine.nvim
 https://github.com/morhetz/gruvbox.git
 https://github.com/rust-lang/rust.vim
 https://github.com/sindrets/diffview.nvim
+https://github.com/preservim/vimux

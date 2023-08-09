@@ -60,6 +60,9 @@ return require('packer').startup(function()
     use '~/.config/nvim/third-party/fzf'
     use '~/.config/nvim/third-party/fzf.vim'
 
+    -- vimux
+    use '~/.config/nvim/third-party/vimux'
+
     -- Programming languages related
     use '~/.config/nvim/third-party/cmp-nvim-lsp'
     use '~/.config/nvim/third-party/cmp-buffer'

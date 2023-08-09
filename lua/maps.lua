@@ -31,6 +31,10 @@ noremap('n', '<leader>tb', '<CMD>tabprevious<CR>') -- Tab backward
 noremap('n', '<leader>to', '<CMD>tabonly<CR>') -- Tab only
 noremap('n', '<leader>tm', '<CMD>tabmove') -- Tab move
 
+-- Window management
+noremap('n', '<leader>vmp', '<CMD>leftabove vsplit %<CR>')
+noremap('n', '<leader>xmp', '<CMD>leftabove split%<CR>')
+
 -- Window navigation
 noremap('n', '<C-h>', '<C-w>h')
 noremap('n', '<C-l>', '<C-w>l')
