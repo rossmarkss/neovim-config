@@ -46,7 +46,7 @@ require('lspconfig').clangd.setup{
         "--function-arg-placeholders",
         "--completion-style=detailed"
     },
-    filetypes = {"c", "cpp", "objc", "objcpp"},
+    filetypes = { "c", "cpp", "objc", "objcpp" },
     root_dir = require('lspconfig').util.root_pattern("src"),
     init_option = { fallbackFlags = {  "-std=c++2a"  } },
     capabilities = capabilities

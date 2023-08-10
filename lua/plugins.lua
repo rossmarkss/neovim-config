@@ -68,6 +68,11 @@ return require('packer').startup(function()
     use '~/.config/nvim/third-party/cmp-buffer'
     use '~/.config/nvim/third-party/cmp-path'
     use '~/.config/nvim/third-party/cmp-cmdline'
+    use '~/.config/nvim/third-party/cmp-git'
+    use '~/.config/nvim/third-party/vim-vsnip'
+    use '~/.config/nvim/third-party/cmp-vsnip'
+    -- use '~/.config/nvim/third-party/ultisnips'
+    -- use '~/.config/nvim/third-party/cmp-nvim-ultisnips'
     use {
         '~/.config/nvim/third-party/nvim-cmp',
         config = function()

@@ -56,6 +56,9 @@ o.smartcase = true
 
 o.grepprg = [[rg --vimgrep --smart-case -follow]] -- Use ripgrep as grep
 
+-- UltiSnips
+-- g.UltiSnipsExpandTrigger = '<f5>'
+
 -- Open file on the same line it was closed
 vim.api.nvim_create_autocmd({"BufReadPost"}, {
     pattern = {"*"},

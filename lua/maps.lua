@@ -19,10 +19,6 @@ noremap('n', '<leader>nn', '<CMD>Neotree toggle<CR>')
 noremap('n', '<C-p>', '<CMD>Files<CR>')
 noremap('n', '<C-g>', '<CMD>Rg<CR>')
 
--- Markdown preview
-noremap('n', '<leader>m', '<CMD>MarkdownPreview<CR>')
-noremap('n', '<leader>mn', '<CMD>MarkdownPreviewStop<CR>')
-
 -- Tabs
 noremap('n', '<leader>tn', '<CMD>tabnew<CR>') -- Tab new
 noremap('n', '<leader>tc', '<CMD>tabclose<CR>') -- Tab close
@@ -46,3 +42,4 @@ noremap('n', '<C-Left>', '<C-w><')
 noremap('n', '<C-Right>', '<C-w>>')
 noremap('n', '<C-Up>', '<C-w>+')
 noremap('n', '<C-Down>', '<C-w>-')
+
