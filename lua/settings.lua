@@ -57,7 +57,7 @@ o.ruler = true -- Enable ruler
 o.title = true -- Set correct title
 o.laststatus = 2 -- Always show status line
 
-set_tab(4) -- Default tab value is 4
+set_tab(2) -- Default tab value is 2
 
 o.autoread = true -- Enable auto read of the file change
 
@@ -89,48 +89,60 @@ vim.api.nvim_create_autocmd({"BufReadPost"}, {
 })
 
 -- C++
-vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
-    pattern = { "*.c", "*.h", "*.cc", "*.hh", "*.cpp", "*.hpp" },
-    callback = function()
-        set_tab(4)
-    end
-})
 vim.api.nvim_create_autocmd({ "FileType" }, {
-    pattern = { "cpp" },
+    pattern = { "c", "cpp", "objc" },
     callback = function()
         o.formatprg = 'clang-format'
         o.equalprg = 'clang-format'
+        set_tab(4)
     end
 })
 
 -- Python
-vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
-    pattern = { "*.py" },
+vim.api.nvim_create_autocmd({ "FileType" }, {
+    pattern = { "python" },
     callback = function()
         set_tab(4)
     end
 })
 
 -- Rust
-vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
-    pattern = { "*.rs" },
+vim.api.nvim_create_autocmd({ "FileType" }, {
+    pattern = { "rust" },
     callback = function()
         set_tab(4)
     end
 })
 
 -- Lua
-vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
-    pattern = { "*.lua" },
+vim.api.nvim_create_autocmd({ "FileType" }, {
+    pattern = { "lua" },
     callback = function()
         set_tab(4)
     end
 })
 
 -- YAML
-vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
-    pattern = { "*.yaml", "*.yml" },
+vim.api.nvim_create_autocmd({ "FileType" }, {
+    pattern = { "yaml" },
     callback = function()
         set_tab(2)
+    end
+})
+
+-- Groovy
+vim.api.nvim_create_autocmd({ "FileType" }, {
+    pattern = { "groovy" },
+    callback = function()
+        set_tab(4)
+    end
+})
+
+-- Jenkinsfile
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile"}, {
+    pattern = { "Jenkinsfile" },
+    callback = function()
+        o.syntax = 'groovy'
+        set_tab(4)
     end
 })
