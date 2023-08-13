@@ -11,14 +11,14 @@ vim.cmd([[set termguicolors]])
 -- vim.cmd([[colorscheme gruvbox]])
 
 -- Peaksea
-vim.cmd([[colorscheme peaksea]])
+-- vim.cmd([[colorscheme peaksea]])
 
 -- Molokai
 -- vim.cmd([[colorscheme molokai]])
 
 -- Solarized
--- o.background = 'dark'
--- vim.cmd([[colorscheme solarized]])
+o.background = 'dark'
+vim.cmd([[colorscheme solarized]])
 
 --- Help functions
 
@@ -57,7 +57,7 @@ o.ruler = true -- Enable ruler
 o.title = true -- Set correct title
 o.laststatus = 2 -- Always show status line
 
-set_tab(2) -- Default tab value is 2
+set_tab(4) -- Default tab value is 4
 
 o.autoread = true -- Enable auto read of the file change
 
@@ -124,5 +124,13 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
     pattern = { "*.lua" },
     callback = function()
         set_tab(4)
+    end
+})
+
+-- YAML
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+    pattern = { "*.yaml", "*.yml" },
+    callback = function()
+        set_tab(2)
     end
 })
