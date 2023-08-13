@@ -9,7 +9,7 @@ end
 -- General
 noremap('n', '<leader>w', '<CMD>update<CR>') -- Save
 noremap('n', '<leader>q', '<CMD>quit<CR>') -- Quit
-noremap('n', '<leader>f', 'gg=G``<CMD>:w<CR>') -- Format
+noremap('n', '<leader>f', 'gg=G``') -- Format
 noremap('n', '<esc>', '<CMD>noh<CR>') -- Disable search highlight on <esc>
 noremap('n', '<leader>t', '<CMD>Trim<CR>') -- Trim whitespaces
 
