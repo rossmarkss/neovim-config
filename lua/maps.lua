@@ -14,20 +14,16 @@ noremap('n', '<esc>', '<CMD>noh<CR>') -- Disable search highlight on <esc>
 noremap('n', '<leader>t', '<CMD>Trim<CR>') -- Trim whitespaces
 
 -- Tabs
-noremap('n', '<leader>ta', '<CMD>tabnew<CR>') -- Tab new
+noremap('n', '<leader>tn', '<CMD>tabnew<CR>') -- Tab new
 noremap('n', '<leader>tc', '<CMD>tabclose<CR>') -- Tab close
-noremap('n', '<leader>tn', '<CMD>tabnext<CR>') -- Tab forward
-noremap('n', '<leader>tp', '<CMD>tabprevious<CR>') -- Tab backward
 noremap('n', '<leader>to', '<CMD>tabonly<CR>') -- Tab only
 noremap('n', '<leader>tmn', '<CMD>+tabmove<CR>') -- Tab move
-noremap('n', '<leader>tmp', '<CMD>+tabmove<CR>') -- Tab move
+noremap('n', '<leader>tmp', '<CMD>-tabmove<CR>') -- Tab move
 
 -- Buffers
 noremap('n', '<leader>bw', '<CMD>bw<CR>') -- Buffer close
 noremap('n', '<leader>bn', '<CMD>bn<CR>') -- Buffer forward
 noremap('n', '<leader>bp', '<CMD>bp<CR>') -- Buffer backward
-noremap('n', '<leader>tmn', '<CMD>+tabmove<CR>') -- Buffer move
-noremap('n', '<leader>tmp', '<CMD>+tabmove<CR>') -- Buffer move
 
 -- Window management
 noremap('n', '<leader>vmp', '<CMD>leftabove vsplit %<CR>')
