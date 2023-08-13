@@ -8,7 +8,6 @@ end
 
 -- General
 noremap('n', '<leader>w', '<CMD>update<CR>') -- Save
-noremap('n', '<leader>q', '<CMD>quit<CR>') -- Quit
 noremap('n', '<leader>f', 'gg=G``') -- Format
 noremap('n', '<esc>', '<CMD>noh<CR>') -- Disable search highlight on <esc>
 noremap('n', '<leader>t', '<CMD>Trim<CR>') -- Trim whitespaces
@@ -27,7 +26,7 @@ noremap('n', '<leader>bp', '<CMD>bp<CR>') -- Buffer backward
 
 -- Window management
 noremap('n', '<leader>vmp', '<CMD>leftabove vsplit %<CR>')
-noremap('n', '<leader>xmp', '<CMD>leftabove split%<CR>')
+noremap('n', '<leader>xmp', '<CMD>leftabove split %<CR>')
 
 -- Window navigation
 noremap('n', '<C-h>', '<C-w>h')
