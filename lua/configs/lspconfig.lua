@@ -54,7 +54,7 @@ require('lspconfig').clangd.setup{
 
 require('lspconfig').pylsp.setup {
     on_attach = on_attach,
-    capabilities = capabilities
+    capabilities = capabilities,
 }
 
 require('lspconfig').rust_analyzer.setup {

@@ -3,12 +3,10 @@ return require('packer').startup(function()
     use '~/.config/nvim/third-party/packer.nvim'
 
     -- Theme
-    use {
-        '~/.config/nvim/third-party/gruvbox',
-        config = function()
-            require('configs.gruvbox')
-        end,
-    }
+    use '~/.config/nvim/third-party/gruvbox'
+    use '~/.config/nvim/third-party/peaksea.vim'
+    use '~/.config/nvim/third-party/molokai'
+    use '~/.config/nvim/third-party/solarized.nvim'
 
     -- General
     use '~/.config/nvim/third-party/plenary.nvim'
@@ -46,13 +44,19 @@ return require('packer').startup(function()
     use {
         '~/.config/nvim/third-party/nvim-treesitter',
         config = function()
-            require('configs.nvim-treesitter')
+            require('configs.treesitter')
         end,
     }
     use {
         '~/.config/nvim/third-party/lualine.nvim',
         config = function()
             require('configs.lualine')
+        end,
+    }
+    use {
+        '~/.config/nvim/third-party/scope.nvim',
+        config = function()
+            require('configs.scope')
         end,
     }
 
@@ -69,14 +73,14 @@ return require('packer').startup(function()
     use '~/.config/nvim/third-party/cmp-path'
     use '~/.config/nvim/third-party/cmp-cmdline'
     use '~/.config/nvim/third-party/cmp-git'
-    use '~/.config/nvim/third-party/vim-vsnip'
-    use '~/.config/nvim/third-party/cmp-vsnip'
-    -- use '~/.config/nvim/third-party/ultisnips'
-    -- use '~/.config/nvim/third-party/cmp-nvim-ultisnips'
+    -- use '~/.config/nvim/third-party/vim-vsnip'
+    -- use '~/.config/nvim/third-party/cmp-vsnip'
+    use '~/.config/nvim/third-party/ultisnips'
+    use '~/.config/nvim/third-party/cmp-nvim-ultisnips'
     use {
         '~/.config/nvim/third-party/nvim-cmp',
         config = function()
-            require('configs.nvim-cmp')
+            require('configs.cmp')
         end,
     }
     use {
@@ -88,7 +92,7 @@ return require('packer').startup(function()
     use {
         '~/.config/nvim/third-party/nvim-lspconfig',
         config = function()
-            require('configs.nvim-lspconfig')
+            require('configs.lspconfig')
         end,
     }
     use {

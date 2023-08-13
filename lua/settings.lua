@@ -1,6 +1,25 @@
 local g = vim.g
 local o = vim.o
 
+--- Theme
+
+vim.cmd([[set termguicolors]])
+
+-- Gruvbox
+-- g.gruvbox_contrast_dark = 'hard'
+-- g.gruvbox_contrast_light = 'hard'
+-- vim.cmd([[colorscheme gruvbox]])
+
+-- Peaksea
+vim.cmd([[colorscheme peaksea]])
+
+-- Molokai
+-- vim.cmd([[colorscheme molokai]])
+
+-- Solarized
+-- o.background = 'dark'
+-- vim.cmd([[colorscheme solarized]])
+
 --- Help functions
 
 function set_tab(n)
@@ -57,7 +76,7 @@ o.smartcase = true
 o.grepprg = [[rg --vimgrep --smart-case -follow]] -- Use ripgrep as grep
 
 -- UltiSnips
--- g.UltiSnipsExpandTrigger = '<f5>'
+g.UltiSnipsExpandTrigger = '<f5>'
 
 -- Open file on the same line it was closed
 vim.api.nvim_create_autocmd({"BufReadPost"}, {
