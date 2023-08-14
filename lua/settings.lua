@@ -6,9 +6,9 @@ local o = vim.o
 vim.cmd([[set termguicolors]])
 
 -- Gruvbox
--- g.gruvbox_contrast_dark = 'hard'
--- g.gruvbox_contrast_light = 'hard'
--- vim.cmd([[colorscheme gruvbox]])
+g.gruvbox_contrast_dark = 'hard'
+g.gruvbox_contrast_light = 'hard'
+vim.cmd([[colorscheme gruvbox]])
 
 -- Peaksea
 -- vim.cmd([[colorscheme peaksea]])
@@ -17,8 +17,8 @@ vim.cmd([[set termguicolors]])
 -- vim.cmd([[colorscheme molokai]])
 
 -- Solarized
-o.background = 'dark'
-vim.cmd([[colorscheme solarized]])
+-- o.background = 'dark'
+-- vim.cmd([[colorscheme solarized]])
 
 --- Help functions
 

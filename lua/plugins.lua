@@ -59,6 +59,12 @@ return require('packer').startup(function()
             require('configs.scope')
         end,
     }
+    use {
+        '~/.config/nvim/third-party/indent-blankline.nvim',
+        config = function()
+            require('configs.indent-blankline')
+        end,
+    }
 
     -- fzf
     use '~/.config/nvim/third-party/fzf'
